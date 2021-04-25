@@ -1,0 +1,757 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****** FIN RESET ******/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+/*------------------------------------- IMAGE ACCUEIL --------------------------------------------------*/
+
+div.banner{
+    height: 100vh;
+  
+    background-image: url(../img/fondordi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+/*---------------------------------------- NAVEBAR -----------------------------------------------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.logo{
+    padding: 2rem;
+}
+.logo a img{
+    width: 100%;
+}
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    
+    
+}
+nav > ul{
+    background-color: black;
+    padding: 1rem;
+}
+nav img{
+    display: block;
+    
+}
+nav ul li{
+    display: inline-block;
+    border-bottom: 2px solid #C12E3A;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sousMenu{
+    display: none;
+    margin: 3px;
+}
+
+nav li:hover .sousMenu{
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: 1000;
+}
+
+nav li a:hover{
+    color: #c12e3a;
+}
+.sousMenu{
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+.sousMenu li{
+    border-bottom: 1px;
+    line-height: 1.5rem;
+    margin-left: 0;
+}
+.menuDeroulant{
+    position: relative;
+}
+
+.sousMenu{
+    text-align: left;
+}
+/*----------------------------------------- DESCRIPTION ----------------------------------------------*/
+
+h1{
+    color: #fff;
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 200px;
+    margin-top: 300px;
+}
+h2{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#chef{
+    margin-left: 200px;
+}
+
+
+/*------------------------------------- PAGE A PROPOS ------------------------------------*/
+#apropos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+#apropos h2{
+    color: #ffff;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 100px;
+
+}
+
+#apropos img{
+    width: 550px;
+    height: 850px;
+   
+}
+
+#apropos p{
+    width: 600px;
+    color: #fff;
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#cv p{
+    text-align: center;
+}
+
+#cv a{
+    color: #ffff;
+    text-align: center;
+}
+
+#cv a:hover{
+    color: #c12e3a;
+}
+
+/*--------------------------------------   CREATIONS   -------------------------------------*/
+
+/*-------- SWIPER ---------- */
+.swiper-container{
+    width: 70%;
+    height: 65%;
+    padding: 1rem;
+}
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: black;
+}
+
+.swiper-slide img{
+    height: 100%;
+}
+
+
+
+/*---- PHOTOGRAPHIES ----*/
+#photographies{
+    background-color: black;
+    height: 100vh;
+    margin-top: -10px;
+
+}
+
+
+#photographies h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+
+
+/*---- ILLUSTRATIONS ----*/
+#illustrations{
+    background-color: black;
+    height: 100vh;
+    margin-top: -10px;
+}
+
+#illustrations h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+
+/*---- PHOTOSHOP ----*/
+#photoshop{
+    background-color: black;
+    height: 100vh;
+    margin-top: -10px;
+}
+
+#photoshop h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+
+
+/*---- INDESIGN ----*/
+#indesign{
+    background-color: black;
+    height: 100vh;
+    margin-top: -10px;
+}
+
+#indesign h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+
+
+/*-------------------------------------------- VIDEO --------------------------------------------------------*/
+#video{
+    background-color: black;
+    /* height: 100vh; */
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+#video .blocVideo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#video p{
+    text-align: left;
+    color: #fff;
+    width: 50%;
+    padding-top: 30px;  
+}
+
+span{
+    color: #c12e3a;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*------------------------------------------------ CONTACT -------------------------------------------------*/
+
+#contact{
+    background-color: black;
+    margin-top: -10px;
+}
+
+#contact h2{
+    color: #ffff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5rem;
+}
+
+#contact{
+    text-align: center;
+}
+#contact .container{
+    justify-content: space-evenly;
+    margin: 2rem 0 4rem 0;
+}
+#contact a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    ;
+    font-size: 1.5rem;
+}
+#contact a:hover{
+    text-decoration: underline;
+    color: #c12e3a;
+
+}
+
+/*---------------------------------------- SOCIAL ----------------------------------------------------*/
+
+#social{
+    background-color: black;
+    height: 100%;
+}
+#social div{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+#social a{
+    display: inline-block;
+    width: 70px;
+    padding: .2rem .5rem 0 .5rem;
+
+}
+#social a img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/*----------------------------------------- COPYRIGHT ----------------------------------------------------------*/
+
+.copy{
+    color: #fff;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+}
+
+
+/*----------------------------------------- BOUTONS ------------------------------------------------------------*/
+
+.swiper-button-next{
+    color: #c12e3a;
+}
+
+.swiper-button-prev{
+    color: #c12e3a;
+}
+
+.swiper-pagination{
+    color: black; 
+}
+
+
+/*----------------------------------------- RESPONSIVE -------------------------------------------------*/
+
+
+@media only screen and (max-width: 380px){
+    div.banner{
+        height: 100vh;
+        width: 100%;
+    }
+
+}
+
+
+/*-------------- LOGO -------------------------*/
+
+@media only screen and (max-width: 650px){
+    .logo a img{
+        width: 60%;
+
+    }
+}
+
+/*-------------- NAVEBAR ----------------------*/
+
+
+@media only screen and (max-width: 380px){
+    nav{
+        display: none;
+    }    
+}
+
+@media only screen and (max-width: 651px){ 
+    nav{
+        padding: 1rem;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    
+}
+
+/*-------------- IMAGE ACCUEIL -----------------*/
+
+@media only screen and (max-width: 380px){
+    div.banner{
+        height: 45vh;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+    div.banner{
+        height: 85vh;
+    }
+}
+
+
+/*-------------- DESCRIPTION ACCUEIL ----------*/
+
+@media only screen and (max-width: 379px){
+    h1{
+        font-size: 1rem;
+        text-align: left;
+    }
+    h2{
+        color: #fff;
+        font-size: 1rem;
+        margin: .2rem;
+    }
+    
+    #chef{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 651px){
+    h1{
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+
+    h2{
+        font-size: 1rem;
+        margin: .5rem;
+    }
+    #chef{
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 650px){
+    h1{
+        font-size: 3rem;
+        margin-left: 100px;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        margin: .8rem;
+    }
+    #chef{
+        margin-left: 100px;
+    }
+}
+
+
+
+/*--------------- A PROPOS -----------------*/
+
+@media only screen and (max-width: 650px){
+
+    #aproposh2{
+        font-size: 20rem;
+    }
+    #apropos p{
+        width: 80%;
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 10%;
+    }
+    #apropos img{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+}
+
+/*-------------- PHOTOGRAPHIES ----------------*/
+
+@media only screen and (max-width: 380px){
+    .swiper-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    #photographies h2{
+        font-size: 2rem;
+        padding: 4rem;
+    }
+
+}
+
+
+/*--------------- ILLUSTRATIONS -----------------*/
+
+@media only screen and (max-width: 650px){
+    #illustrations h2{
+        font-size: 2em;
+        padding: 4rem;
+    }
+
+}
+
+/*--------------- PHOTOSHOP -----------------*/
+
+@media only screen and (max-width: 650px){
+    #photoshop h2{
+        font-size: 2em;
+        padding: 4rem;
+    }
+
+}
+
+/*--------------- VIDEO -----------------*/
+
+@media only screen and (max-width: 380px){
+    #video p{
+        text-align: center;
+        color: #fff;
+        width: 20%;
+        padding-top: 5px; 
+        line-height: 20px; 
+    }
+}
+
+@media only screen and (max-width: 650px){
+    #video h2{
+        font-size: 2em;
+        padding: 4rem;
+    }
+
+    #video .blocVideo{
+        height: 60%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #video p{
+        color: #fff;
+        width: 50%;
+        margin-top: 40px;
+        padding-top: 50px;
+    }
+
+}
+
+/*------------------ CONTACT -----------------------*/
+
+@media only screen and (max-width: 650px){
+    #contact{
+        background-color: black;
+        margin-top: -10px;
+    }
+    
+    #contact h2{
+        color: #ffff;
+        text-align: center;
+        font-size: 2rem;
+        padding: 5rem;
+    }
+    
+    .tel{
+        padding: 3rem;
+    }
+    
+    #contact{
+        text-align: center;
+    }
+
+    #contact .container{
+        justify-content: space-evenly;
+        margin: 2rem 0 4rem 0;
+    }
+
+    #contact a{
+        font-size: 1rem;
+        margin-top: -100px;
+    
+    }
+        
+}
+
+/*----------------- SOCIAL ------------------------*/
+
+@media only screen and (max-width: 650px){
+    #social{
+        padding: 5rem;
+    }
+    #social a{
+        display: inline-block;
+        width: 40px;
+        padding: .2rem .5rem 0 .5rem;
+    }
+    #social a img{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+/*------------------ SWIPER -----------------------*/
+
+@media only screen and (max-width: 380px){
+    .swiper-container{
+        width: 70%;
+        height: 65%;
+        padding: 1rem;
+    }
+    
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: black;
+    }
+    
+    .swiper-slide img{
+        height:100%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .swiper-container{
+        width: 70%;
+        height: 65%;
+        padding: 1rem;
+    }
+    
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: black;
+    }
+    
+    .swiper-slide img{
+        height: 80%;
+    }
+}
+
+
+/*---------------- BOUTONS -------------*/
+
+@media only screen and (max-width: 380px){
+    .swiper-button-next{
+        color: #c12e3a;
+        display: none;
+    }
+    
+    .swiper-button-prev{
+        color: #c12e3a;
+        display: none;
+    }
+    
+    .swiper-pagination{
+        color: black; 
+    }
+    
+
+}
+
+
+/*------------------------------------------ BOUTONS ---------------------------------------------------*/
+
+@media only screen and (max-width: 650px){
+    .swiper-button-next{
+        color: #c12e3a;
+        display: none;
+    }
+    
+    .swiper-button-prev{
+        color: #c12e3a;
+        display: none;
+    }
+    
+    .swiper-pagination{
+        color: black; 
+    }
+}
